@@ -21,6 +21,8 @@ jobs:
 
     - name: Install dependencies
       run: |
+        python -m venv .venv
+        source .venv/bin/activate
         make install
 
     - name: Lint with pylint, black, and isort
