@@ -11,8 +11,8 @@ test:
 	python -m pytest --cov=multi_tool_agent --cov=tests --cov-report=term-missing
 
 lint:
-	pylint --disable=R,C /workspaces/test_an_agent/multi_tool_agent/agent.py
-
+	pylint --disable=R,C multi_tool_agent.agent
+	
 format:
 	python -m black /workspaces/test_an_agent/multi_tool_agent/agent.py
 	python -m isort /workspaces/test_an_agent/multi_tool_agent/agent.py
