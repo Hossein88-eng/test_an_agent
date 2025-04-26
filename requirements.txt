@@ -1,0 +1,24 @@
+# Core dependencies
+google-adk==0.3.0
+# Date 26 April 2025
+# more info: https://google.github.io/adk-docs/get-started/quickstart/#venv-install
+
+# Testing
+pytest==8.3.5
+pytest-cov==6.1.1
+ipython==9.2.0
+
+# Linting and formatting
+pylint==3.3.6
+black==25.1.0
+#flake8==7.2.0
+isort==6.0.1
+
+# Environment variables
+python-dotenv==1.1.0
+
+# For cloud deployment (example: FastAPI for web, gunicorn for serving)
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+
+# Development tools
