@@ -14,8 +14,6 @@ lint:
 	pylint --disable=R,C multi_tool_agent.agent
 	
 format:
-	python -m black /workspaces/test_an_agent/multi_tool_agent/agent.py
-	python -m isort /workspaces/test_an_agent/multi_tool_agent/agent.py
-
+	python -m black multi_tool_agent/
 
 all: install format lint test
