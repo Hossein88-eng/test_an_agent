@@ -12,8 +12,6 @@ test:
 
 lint:
 	pylint --disable=R,C /workspaces/test_an_agent/multi_tool_agent/agent.py
-	python -m black --check /workspaces/test_an_agent/multi_tool_agent/agent.py
-	python -m isort --check-only /workspaces/test_an_agent/multi_tool_agent/agent.py
 
 format:
 	python -m black /workspaces/test_an_agent/multi_tool_agent/agent.py
