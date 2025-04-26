@@ -26,14 +26,22 @@ jobs:
         make install
         python -m pip install pylint
 
+    - name: Verify Pylint Installation
+      run: |
+        source .venv/bin/activate
+        pylint --version
+
     - name: Lint with pylint, black, and isort
       run: |
+        source .venv/bin/activate
         make lint
 
     - name: Test with pytest
       run: |
+        source .venv/bin/activate
         make test
 
     - name: Format with black and isort
       run: |
+        source .venv/bin/activate
         make format
